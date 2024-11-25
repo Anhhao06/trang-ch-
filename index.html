@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ | Giày Đá Bóng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+            background: url('banner.webp') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .banner button {
+            margin-top: 15px;
+            background: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .categories, .featured, .promotions, .testimonials, .news {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .categories h2, .featured h2, .promotions h2, .testimonials h2, .news h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .categories .category, .featured .product, .promotions .promotion {
+            display: inline-block;
+            width: 30%;
+            margin: 10px 1%;
+            text-align: center;
+        }
+
+        .categories .category img, .featured .product img, .promotions .promotion img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .testimonials .testimonial, .news .article {
+            margin: 10px 0;
+        }
+
+        .newsletter {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cửa Hàng Giày Đá Bóng</h1>
+        <nav>
+            <ul>
+                <li><a href="Trangchu.html">Trang Chủ</a></li>
+                <li><a href="Sanpham.html">Sản Phẩm</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <div>
+            <h1>Bứt Tốc Mạnh Mẽ, Làm Chủ Cuộc Chơi</h1>
+            <button>Xem Bộ Sưu Tập</button>
+        </div>
+    </div>
+
+    <section class="categories" id="categories">
+        <h2>Danh Mục Sản Phẩm</h2>
+        <div class="category">
+            <img src="nhantao.jpg" alt="Giày sân cỏ nhân tạo">
+            <p>Giày sân cỏ nhân tạo</p>
+        </div>
+        <div class="category">
+            <img src="tunhien2.jpg" alt="Giày sân cỏ tự nhiên">
+            <p>Giày sân cỏ tự nhiên</p>
+        </div>
+        <div class="category">
+            <img src="fussan.jpg" alt="Giày futsal">
+            <p>Giày futsal</p>
+        </div>
+    </section>
+
+    <section class="featured" id="featured">
+        <h2>Sản Phẩm Best Seller</h2>
+        <div class="product">
+            <img src="mi2.webp" alt="Sản phẩm 1">
+            <p>MIZUNO MORELIA SALA CLUB TF - Q1GB241603 - XANH/TRẮNG</p>
+            <p>Loại: Giày Cỏ Nhân Tạo (Turf)</p>
+            <p>Mã SP: Q1GB241603-38-5</p>
+            <p>Giá: 1,590,000 VNĐ</p>
+        </div>
+        <div class="product">
+            <img src="nike.jpg" alt="Sản phẩm 2">
+            <p>Nike Mercurial Superfly 10 Academy KM MG/FG Kylian Mbappe màu cam FQ8293-800</p>
+            <p>Loại: Giày Cỏ Tự Nhiên (Firm Ground)</p>
+            <p>Mã SP: FQ8293-800</p>
+            <p>Giá: 2,550,000 VNĐ</p>
+        </div>
+        <div class="product">
+            <img src="tiem.webp" alt="Sản phẩm 3">
+            <p>Giày đá bóng Nike Tiempo Legend 9 Academy IC Blast - White/Black/Baltic Blue/Pink Blast DA1190-146</p>
+            <p>Loại: Giày Fulsan</p>
+            <p>Mã SP: DA1190-146-40.5</p>
+            <p>Giá: 1,690,000 VNĐ</p>
+        </div>
+    </section>
+
+    <section class="promotions" id="promotions">
+        <h2>Ưu Đãi & Khuyến Mãi</h2>
+        <div class="promotion">
+            <img src="puma.jpg" alt="Giảm giá">
+            <p>Giảm giá 30% cho mẫu mới</p>
+        </div>
+        <div class="promotion">
+            <img src="combo.webp" alt="Combo">
+            <p>Combo giảm giá đến 30%</p>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Nhận Thông Tin Ưu Đãi</h2>
+        <p>Đăng ký email để không bỏ lỡ các chương trình hấp dẫn.</p>
+        <input type="email" placeholder="Nhập email của bạn">
+        <button>Đăng Ký</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Giày Đá Bóng. Tất cả quyền lợi được bảo lưu.</p>
+        <ul>
+            <li><a href="#">Chính Sách Đổi Trả</a></li>
+            <li><a href="#">Hỗ Trợ Khách Hàng</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
