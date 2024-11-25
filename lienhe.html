@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+</head>
+<body>
+    <header>
+        <h1>Cửa Hàng Giày Đá Bóng</h1>
+        <nav>
+            <ul>
+                <li><a href="Trangchu.html">Trang Chủ</a></li>
+                <li><a href="Sanpham.html">Sản Phẩm</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Thông Tin Liên Hệ</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> ngohao9206@gmail.com</p>
+            <p><strong>Điện thoại:</strong> 0926 720 922</p>
+            <p><strong>Địa chỉ:</strong> Số 1 Phố Xốm, Hà Đông, Hà Nội</p>
+        </div>
+
+        <h2>Gửi Tin Nhắn</h2>
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+
+            <label for="message">Tin Nhắn</label>
+            <textarea id="message" name="message" rows="5" placeholder="Nhập tin nhắn của bạn" required></textarea>
+
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cửa Hàng Giày Đá Bóng. Tất cả quyền lợi được bảo lưu.</p>
+    </footer>
+</body>
+</html>
