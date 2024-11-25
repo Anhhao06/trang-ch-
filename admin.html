@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HN Sport - Quản Trị</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #333;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            padding: 15px 0;
+            background: #444;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background: #555;
+        }
+
+        .sidebar footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #444;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .main-content h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .table th, .table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table th {
+            background: #007bff;
+            color: white;
+        }
+
+        .btn {
+            padding: 8px 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div>
+            <h2>HN Sport Admin</h2>
+            <ul>
+                <li><a href="#dashboard">Bảng Điều Khiển</a></li>
+                <li><a href="#products">Quản Lý Sản Phẩm</a></li>
+                <li><a href="#orders">Quản Lý Đơn Hàng</a></li>
+                <li><a href="#users">Quản Lý Người Dùng</a></li>
+                <li><a href="#settings">Cài Đặt</a></li>
+            </ul>
+        </div>
+        <footer>
+            <p>&copy; 2024 HN Sport Admin</p>
+        </footer>
+    </div>
+
+    <div class="main-content">
+        <h1>Bảng Điều Khiển</h1>
+
+        <!-- Bảng Quản Lý Sản Phẩm -->
+        <section id="products">
+            <h2>Quản Lý Sản Phẩm</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Giá</th>
+                        <th>Tình Trạng</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>ADIDAS F50 PRO TF</td>
+                        <td>1,500,000 VNĐ</td>
+                        <td>Còn hàng</td>
+                        <td><a href="#" class="btn">Chỉnh Sửa</a> <a href="#" class="btn">Xóa</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Nike Zoom Mercurial</td>
+                        <td>1,350,000 VNĐ</td>
+                        <td>Còn hàng</td>
+                        <td><a href="#" class="btn">Chỉnh Sửa</a> <a href="#" class="btn">Xóa</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bảng Quản Lý Đơn Hàng -->
+        <section id="orders">
+            <h2>Quản Lý Đơn Hàng</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Khách Hàng</th>
+                        <th>Sản Phẩm</th>
+                        <th>Trạng Thái</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>ADIDAS F50 PRO TF</td>
+                        <td>Đang xử lý</td>
+                        <td><a href="#" class="btn">Chi Tiết</a> <a href="#" class="btn">Hủy</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Trần Thị B</td>
+                        <td>Nike Zoom Mercurial</td>
+                        <td>Đã giao</td>
+                        <td><a href="#" class="btn">Chi Tiết</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bảng Quản Lý Người Dùng -->
+        <section id="users">
+            <h2>Quản Lý Người Dùng</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên Người Dùng</th>
+                        <th>Email</th>
+                        <th>Vai Trò</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ngô Văn Hào</td>
+                        <td>ngohao9206@gmail.com</td>
+                        <td>Quản Trị Viên</td>
+                        <td><a href="#" class="btn">Chỉnh Sửa</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Đào Ngọc Nam</td>
+                        <td>Namdao@gmail.com</td>
+                        <td>Người Dùng</td>
+                        <td><a href="#" class="btn">Chỉnh Sửa</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
